@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+html{ 
+    scroll-behavior: smooth;
+}
+
+.btn{
+    background-color: #1355FF;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+   
+/* NAVBAR STARTS */
+.nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    padding: 5px 100px;                                   
+    font-weight: 300;
+    font-size: 14px;
+    color: black;
+
+    position: relative;
+}  
+
+.nav_logo>svg{
+    height: 60px;
+}
+
+.nav_items>ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.nav_items>ul>li{
+    list-style: none;
+}
+
+.nav_items>ul>li>a{ 
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    color: #37456C;
+    
+}
+.nav_email>a{ 
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.humburger{
+    position: absolute;
+    right: 30px;
+    top: 21px;
+    display: none;
+} 
+
+
+.humburger-line{
+    width: 30px;
+    height: 3px; 
+    margin: 5px 0px;
+    background-color: #05080A;    
+} 
+/* NAVBAR ENDS */
+
+
+
+@media only screen and (max-width:900px) {
+    .nav{
+         height: 70px;
+         display: block;
+         padding: 5px 0px;
+    } 
+
+    .nav_logo{
+           margin: 0px 0px 0px 100px;
+    }
+
+    .humburger{
+        display: block;
+    } 
+
+    .nav_items{
+        background-color: rgb(255, 255, 255);
+        position: absolute;     
+        left: -100%;
+        
+        padding: 20px 0px ;   
+        width: 100%;
+        height: calc(100vh - 68px);
+
+        transition: all 0.9s ease;
+    }
+    
+    .nav_email{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 230px;
+        left: -100%;
+        width: 100%;
+
+        transition: all 0.9s ease;
+    }
+
+    .nav_items>ul{  
+        flex-direction: column;
+    }
+
+    .nav_items_menu{
+        left: 0;
+    }
+    .nav_email_menu{
+        left: 0;
+    }
+
+}

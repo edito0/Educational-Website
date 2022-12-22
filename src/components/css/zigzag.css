@@ -1,0 +1,57 @@
+.zigzag {
+    width: 900px;
+    margin: 60px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #061237;
+}
+
+.inverse {
+    flex-direction: row-reverse;
+}
+
+
+.zigzag>div:nth-child(1) {
+    margin: 0px 60px 0px 60px;
+}
+
+.zigzag>div:nth-child(1)>h1 {
+    margin: 20px 0px;
+}
+
+.zigzag>div:nth-child(1)>ul {
+    margin: 0px 0px 0px 20px;
+}
+
+.zigzag>div:nth-child(1)>ul>li {
+    line-height: 40px;
+}
+
+.zigzag>div:nth-child(1)>p {
+    font-size: 10px;
+}
+
+
+.zigzag>div:nth-child(2)>img {
+    width: 350px;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .zigzag {
+        width: 100%;
+        margin: 60px 0px;
+
+        flex-direction: column;
+    }
+
+
+
+    .zigzag>div:nth-child(2)>img {
+        width: 300px;
+    }
+
+
+}
